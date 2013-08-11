@@ -385,7 +385,7 @@ img[src*="blue.png"] {
 }
 
 img[src*="grey.png"] {
-    background: #DDD !important;
+    background: #BBB !important;
     width: 25px;
     height: 25px;
     padding: 1px;
