@@ -1,4 +1,4 @@
-jenkins-blu-theme
+jenkins-clean-theme
 =================
 
 This is a simple theme for jenkins using the "simple-theme-plugin"
