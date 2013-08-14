@@ -106,6 +106,10 @@ a {
     text-decoration: none !important;
 }
 
+#login-field a {
+	color: white !important;
+}
+
 #login-field > span > a {
     color: white !important;
     font-weight: normal !important;
@@ -260,7 +264,7 @@ table {
 }
 
 .subtasks:empty {
-  display: none;
+	display: none;
 }
 
 td.pane, tr.build-row > td {
