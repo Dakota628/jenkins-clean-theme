@@ -388,7 +388,7 @@ img[src*="blue.png"] {
     margin-left: 3px;
 }
 
-img[src*="grey.png"] {
+img[src*="grey.png"], img[src*="disabled.png"] {
     background: #BBB !important;
     width: 25px;
     height: 25px;
