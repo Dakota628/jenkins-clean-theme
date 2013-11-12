@@ -4,7 +4,7 @@ body {
 
 #top-panel {
     height: 37px !important;
-    background: 0xF28D00;
+    background: #F28D00;
 }
 
 #top-panel td #login-field span a {
