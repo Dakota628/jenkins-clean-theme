@@ -377,6 +377,10 @@ li.item > .inside {
     outline: 0 !important;
 }
 
+td.pane-header > div > a.collapse {
+    position: relative;
+}
+
 /* color blocks */
 img[src*="blue.png"] {
     background: #326ca6 !important;
