@@ -382,42 +382,45 @@ td.pane-header > div > a.collapse {
 }
 
 /* color blocks */
-img[src*="blue.png"] {
-    background: #326ca6 !important;
-    width: 25px;
-    height: 25px;
-    padding: 1px;
+img[src*="blue.png"], img[src*="yellow.png"], img[src*="red.png"], img[src*="grey.png"],
+img[src*="disabled.png"], img[src*="nobuilt.png"], img[src*="aborted.png"], img[src*="blue_anime.gif"], 
+img[src*="yellow_anime.gif"], img[src*="red_anime.gif"], img[src*="grey_anime.gif"],
+img[src*="disabled_anime.gif"], img[src*="nobuilt_anime.gif"], img[src*="aborted_anime.gif"] {
     content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
-    border-radius: 100px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
     margin-left: 3px;
-}
-
-img[src*="grey.png"], img[src*="disabled.png"], img[src*="nobuilt.png"], img[src*="aborted.png"] {
+    padding: 1px;
     background: #BBB !important;
-    width: 25px;
-    height: 25px;
-    padding: 1px;
-    content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
-    border-radius: 100px;
-    margin-left: 3px;
 }
 
-img[src*="yellow.png"] {
+img[src*="blue.png"], img[src*="blue_anime.gif"] {
+    background: #326ca6 !important;
+}
+
+img[src*="yellow.png"], img[src*="yellow_anime.gif"] {
     background: #FFFB00 !important;
-    width: 25px;
-    height: 25px;
-    padding: 1px;
-    content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
-    border-radius: 100px;
-    margin-left: 3px;
 }
 
-img[src*="red.png"] {
+img[src*="red.png"], img[src*="red_anime.gif"] {
     background: #FF7373 !important;
-    width: 25px;
-    height: 25px;
-    padding: 1px;
-    content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
-    border-radius: 100px;
-    margin-left: 3px;
+}
+
+.icon16x16 {
+    width: 16px;
+    height: 16px;
+    font-size: 16px;
+}
+
+.icon24x24 {
+    width: 24px;
+    height: 24px;
+    font-size: 24px;
+}
+
+.icon32x32 {
+    width: 32px;
+    height: 32px;
+    font-size: 32px;
 }
