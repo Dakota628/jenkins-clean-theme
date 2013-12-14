@@ -425,9 +425,8 @@ img[src*="disabled_anime.gif"], img[src*="nobuilt_anime.gif"], img[src*="aborted
     content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
-    border-radius: 50%;
-    margin-left: 3px;
     padding: 1px;
+    border-radius: 50%;
     background: #BBB !important;
 }
 
@@ -452,20 +451,21 @@ img[src*="_anime.gif"] {
     -o-animation-iteration-count: infinite;
 }
 
-.icon16x16 {
-    width: 16px;
-    height: 16px;
-    font-size: 16px;
+.build-health-icon {
+	padding: 0px;
 }
 
-.icon24x24 {
-    width: 24px;
-    height: 24px;
-    font-size: 24px;
+.icon16x16:not(.build-health-icon) {
+    width: 14px;
+    height: 14px;
 }
 
-.icon32x32 {
-    width: 32px;
-    height: 32px;
-    font-size: 32px;
+.icon24x24:not(.build-health-icon) {
+    width: 22px;
+    height: 22px;
+}
+
+.icon32x32:not(.build-health-icon) {
+    width: 30px;
+    height: 30px;
 }
