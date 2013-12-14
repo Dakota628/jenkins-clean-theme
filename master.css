@@ -382,6 +382,42 @@ td.pane-header > div > a.collapse {
 }
 
 /* color blocks */
+@-webkit-keyframes inprogress {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@-moz-keyframes inprogress {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+Keyframes inprogress {
+    0% {
+        opacity: 1;
+    }
+    50% {
+        opacity: 0.1;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
 img[src*="blue.png"], img[src*="yellow.png"], img[src*="red.png"], img[src*="grey.png"],
 img[src*="disabled.png"], img[src*="nobuilt.png"], img[src*="aborted.png"], img[src*="blue_anime.gif"], 
 img[src*="yellow_anime.gif"], img[src*="red_anime.gif"], img[src*="grey_anime.gif"],
@@ -405,6 +441,15 @@ img[src*="yellow.png"], img[src*="yellow_anime.gif"] {
 
 img[src*="red.png"], img[src*="red_anime.gif"] {
     background: #FF7373 !important;
+}
+
+img[src*="_anime.gif"] {
+    -webkit-animation: inprogress 2s;
+    -webkit-animation-iteration-count: infinite;
+    -moz-animation: inprogress 2s;
+    -moz-animation-iteration-count: infinite;
+    -o-animation: inprogress 2s;
+    -o-animation-iteration-count: infinite;
 }
 
 .icon16x16 {
