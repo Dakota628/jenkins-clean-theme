@@ -451,8 +451,13 @@ img[src*="_anime.gif"] {
     -o-animation-iteration-count: infinite;
 }
 
+img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
+    width: 42px;
+    height: 10px;
+}
+
 .build-health-icon {
-	padding: 0px;
+    padding: 0px;
 }
 
 .icon16x16:not(.build-health-icon) {
@@ -466,6 +471,11 @@ img[src*="_anime.gif"] {
 }
 
 .icon32x32:not(.build-health-icon) {
+    width: 30px;
+    height: 30px;
+}
+
+.icon48x48:not(.build-health-icon) {
     width: 30px;
     height: 30px;
 }
