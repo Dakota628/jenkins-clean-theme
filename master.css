@@ -476,6 +476,6 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 .icon48x48:not(.build-health-icon) {
-    width: 30px;
-    height: 30px;
+    width: 46px;
+    height: 46px;
 }
