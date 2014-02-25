@@ -461,21 +461,30 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 .icon16x16:not(.build-health-icon) {
-    width: 14px;
-    height: 14px;
+    width: 0;
+    height: 16px;
+    padding: 0 16px 0 0;
 }
 
 .icon24x24:not(.build-health-icon) {
-    width: 22px;
-    height: 22px;
+    width: 0;
+    height: 24px;
+    padding: 0 24px 0 0;
 }
 
 .icon32x32:not(.build-health-icon) {
-    width: 30px;
-    height: 30px;
+    width: 0;
+    height: 32px;
+    padding: 0 32px 0 0;
 }
 
 .icon48x48:not(.build-health-icon) {
-    width: 46px;
-    height: 46px;
+    width: 0;
+    height: 48px;
+    padding: 0 48px 0 0;
+}
+
+img.build-status-icon {
+    width: 0;
+    padding: 0 16px 0 0;
 }
