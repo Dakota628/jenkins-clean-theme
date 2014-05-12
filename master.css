@@ -182,6 +182,14 @@ td.inactive {
     margin-top: 20px !important;
 }
 
+.build-monitor.dashboard {
+    margin-top: 0 !important;
+}
+
+.build-monitor a {
+    color: #ddd;
+}
+
 td.inactive a {
     color: #505050 !important;
 }
