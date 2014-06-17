@@ -1,21 +1,19 @@
 body {
-    background: #F0F0F0 !important;
+    background: #fff!important;
 }
 
 #top-panel {
-    height: 37px !important;
+    height: 55px!important;
+    padding-top: 15px;
+    padding-left: 5px;
     background: #036;
 }
 
-#top-panel td #login-field span a {
-    background: none;
+#top-panel td #login-field span a,#top-panel td #searchform a {
+    background: 0 0;
 }
 
-#top-panel td #searchform a {
-    background: none;
-}
-
-#top-panel td > a {
+#top-panel td>a {
     display: block;
     width: 300px;
 }
@@ -23,64 +21,64 @@ body {
 #breadcrumbs {
     background: #326ca6;
     border-top: 1px solid #036;
-    border-bottom: none !important;
-    margin-bottom: 10px;
-    padding-left: 8px !important;
+    border-bottom: none!important;
+    margin-bottom: 15px;
+    padding-left: 8px!important;
+    height: 35px!important;
 }
 
 #breadcrumbs li a {
-    color: #fff !important;
-}
-
-#breadcrumbs li a {
-    color: #fff !important;
+    color: #fff!important;
+    padding-top: 5px;
+    height: 30px!important;
 }
 
 #breadcrumbs li a:hover {
-    background: white;
-    color: black !important;
-    text-decoration: none !important;
+    background: #fff;
+    color: #505050!important;
+    text-decoration: none!important;
 }
 
-#right-top-nav  a {
-    color: #fff !important;
+#right-top-nav a {
+    color: #fff!important;
     margin-top: 1px;
     text-decoration: none;
     display: block;
     padding-left: 5px;
     padding-right: 5px;
+    padding-top: 5px;
+    height: 30px!important;
 }
 
-#right-top-nav  a:hover {
-    background: white;
-    color: black !important;
+#right-top-nav a:hover {
+    background: #fff;
+    color: #505050!important;
 }
 
 #main-table {
-    background: white !important;
-    background-image: none !important;
-    height: 100% !important;
+    background: #fff!important;
+    background-image: none!important;
+    height: 100%!important;
 }
 
-#search-box, #filter-box {
-    padding: 3px !important;
-    box-shadow: none !important;
-    background-image: none !important;
-    border: 1px solid #DDD !important;
-    border-radius: 4px !important;
-    outline: none !important;
+#filter-box,#search-box {
+    padding: 3px!important;
+    box-shadow: none!important;
+    background-image: none!important;
+    border: 1px solid #DDD!important;
+    border-radius: 4px!important;
+    outline: 0!important;
 }
 
 .yui-skin-sam .yui-ac {
-    margin-top: 3px !important;
+    margin-top: 3px!important;
 }
 
-#search-form > a {
+#search-form>a {
     padding-bottom: 5px;
 }
 
-/* dat selector */
-#top-panel > table > tbody > tr > td:first-of-type > a  > img {
+#top-panel>table>tbody>tr>td:first-of-type>a>img {
     margin-top: 5px;
 }
 
@@ -92,166 +90,185 @@ body {
 }
 
 #footer {
-    border-top-color: #ddd !important;
-    background: #F0F0F0 !important;
-    color: #505050 !important;
+    background: rgba(0,0,0,.04);
+    color: #505050!important;
 }
 
-#footer > a {
-    color: #326ca6 !important;
+#footer>a {
+    color: #326ca6!important;
 }
 
 a {
-    color: #326ca6 !important;
-    text-decoration: none !important;
+    color: #326ca6!important;
+    text-decoration: none!important;
 }
 
 #login-field a {
-	color: white !important;
+    color: #fff!important;
 }
 
-#login-field > span > a {
-    color: white !important;
-    font-weight: normal !important;
+#login-field>span>a {
+    color: #fff!important;
+    font-weight: 400!important;
 }
 
-#login-field > span > a:hover {
-    text-decoration: none !important;
+#login-field>span>a:hover {
+    text-decoration: none!important;
 }
 
 a:hover {
-    text-decoration: underline !important;
+    text-decoration: underline!important;
 }
 
-.smallfont > a:hover {
-    text-decoration: none !important;
+.smallfont>a:hover {
+    text-decoration: none!important;
 }
 
 #projectstatus {
-    border: none !important;
-    margin-bottom: 30px !important;
+    margin-bottom: 30px!important;
 }
 
-th, #projectstatus th > a, th > a {
-    background: inherit !important;
-    color: black !important;
+#projectstatus th>a,th,th>a {
+    background: inherit!important;
+    color: #000!important;
     font-size: 13px;
     text-align: left;
 }
 
-body > tr:first-of-type {
-    border-bottom: 1px solid #bbb !important;
+body>tr:first-of-type {
+    border-bottom: 1px solid rgba(0,0,0,.1)!important;
 }
 
-th.pane {
-    border: none !important;
+table[style="margin-top: 1em; margin-left:1em;"] td {
+    padding-top: 24px;
 }
 
 tr {
-    border-bottom: 1px solid #bbb !important;
-    border-left: none !important;
-    border-right: none !important;
-    border-top: none !important;
+    border-bottom: 1px solid rgba(0,0,0,.1)!important;
+    border-left: none!important;
+    border-right: none!important;
+    border-top: none!important;
+}
+
+#projectstatus td,.bigtable td {
+    padding: 10px!important;
+}
+
+#projectstatus tr:nth-child(even)>td,.bigtable tr:nth-child(even)>td {
+    background: rgba(0,0,0,.075)!important;
+}
+
+#projectstatus tr:nth-child(odd)>td,.bigtable tr:nth-child(odd)>td {
+    background: rgba(0,0,0,.025)!important;
+}
+
+#projectstatus tr th:first-child,.bigtable tr th:first-child {
+    padding: 10px;
+    #background: rgba(0,0,0,.1)!important;
+}
+
+#projectstatus,.bigtable {
+    border: 1px solid rgba(0,0,0,.1)!important;
+}
+
+.bigtable tr {
+    border: none!important;
 }
 
 tr:hover {
-    background: inherit !important;
+    background: inherit!important;
 }
 
-table.pane > tbody > tr > td:last-child {
-    border-right: none !important;
+table.pane>tbody>tr>td:last-child {
+    border-right: none!important;
 }
 
 td.active {
-    background: white !important;
-    color: #326ca6 !important;
-    padding-bottom: 2px !important;
+    background: #fff!important;
+    margin-top: -2px!important;
+    color: #326ca6!important;
 }
 
 td.inactive {
-    border: none !important;
+    border: none!important;
 }
 
 #viewList {
-    margin-bottom: 30px !important;
-    border-bottom: 1px solid #ddd !important;
-    border-top: 1px solid #ddd !important;
+    margin-bottom: 15px!important;
+    border: 1px solid rgba(0,0,0,.1)!important;
+}
+
+#viewList td {
+    padding-bottom: 5px;
 }
 
 .dashboard {
-    margin-top: 20px !important;
+    margin-top: 10px!important;
 }
 
 .build-monitor.dashboard {
-    margin-top: 0 !important;
+    margin-top: 0!important;
 }
 
 .build-monitor a {
-    color: #ddd !important;
+    color: #ddd!important;
 }
 
 td.inactive a {
-    color: #505050 !important;
+    color: #505050!important;
 }
 
 td {
-    border: none !important;
-    padding-right: 5px !important;
+    border: none!important;
+    padding-right: 5px!important;
     height: 25px;
-    font-size: 13px !important;
+    font-size: 13px!important;
 }
 
 td.inactive:hover {
-    background: white !important;
+    background: #fff!important;
 }
 
 #side-panel {
-    background: #f0f0f0 !important;
-    padding-left: 0px !important;
-    padding-right: 0px !important;
-    height: 100% !important;
+    background: rgba(0,0,0,.05)!important;
+    padding-left: 0!important;
+    padding-right: 0!important;
+    height: 100%!important;
 }
 
 #main-panel {
-    border-left: 1px solid #ddd !important;
-    padding: 10px !important;
-    margin-left: 10px !important;
-    height: 100% !important;
+    border-left: 1px solid #ddd!important;
+    padding: 10px!important;
+    margin-left: 10px!important;
+    height: 100%!important;
 }
 
 table {
-    margin: 0px !important;
-    padding: 0px !important;
-    border: none !important;
-}
-
-table {
-    border-spacing: 0px !important;
-}
-
-table {
-    border-spacing: 0px !important;
-    border: none !important;
+    margin: 0!important;
+    padding: 0!important;
+    border-spacing: 0!important;
+    border: none!important;
 }
 
 #noJobDiv {
-    border: none !important;
+    border: none!important;
 }
 
-.task > a, .subtasks > a {
-    color: #505050 !important;
+.subtasks>a,.task>a {
+    color: #505050!important;
 }
 
 #resizeContainer {
-    border: none !important;
+    border: none!important;
 }
 
 .dashboard td {
-    vertical-align: middle !important;
+    vertical-align: middle!important;
 }
 
 #description {
-    margin: 0px !important;
+    margin: 0!important;
+    overflow: auto;
 }
 
 #side-panel div {
@@ -260,77 +277,73 @@ table {
 }
 
 #side-panel tr {
-    border: none !important;
+    border: none!important;
 }
 
 .pane {
-    margin-top: 15px !important;
+    margin-top: 15px!important;
 }
 
-.task, .subtasks {
-    min-height: 38px !important;
+.subtasks,.task {
+    min-height: 38px!important;
 }
 
 .subtasks:empty {
-	display: none;
+    display: none;
 }
 
-td.pane, tr.build-row > td {
-    background: #ddd !important;
-    border-left: 1px solid #f0f0f0 !important;
-    border-bottom: 1px solid #f0f0f0 !important;
+td.pane,tr.build-row>td {
+    background: rgba(0,0,0,.05)!important;
+    border-left: 1px solid #f0f0f0!important;
+    border-bottom: 1px solid #f0f0f0!important;
     text-align: left;
 }
 
-td.pane:last-of-type, tr.build-row > td:last-of-type {
-    border-left: none !important;
+td.pane:first-of-type,td.pane:last-of-type,th.pane:first-of-type,tr.build-row>td:first-of-type,tr.build-row>td:last-of-type {
+    border-left: none!important;
 }
 
-td.pane:first-of-type, tr.build-row > td:first-of-type, th.pane:first-of-type {
-    border-left: none !important;
-}
-
-.build-row:last-of-type > td {
-    padding-top: 10px !important;
-    background: inherit !important;
+.build-row:last-of-type>td {
+    padding-top: 10px!important;
+    background: inherit!important;
 }
 
 form {
     clear: both;
 }
 
-.pane-header, .pane-header > a {
-    color: black !important;
+.pane-header,.pane-header>a {
+    color: #505050!important;
 }
 
-th.pane, tr.build-row > th {
-    background: #bbb !important;
-    border: 1px solid #f0f0f0 !important;
+th.pane,tr.build-row>th {
+    background: rgba(0,0,0,.1)!important;
+    border: 1px solid #f0f0f0!important;
     text-align: left;
     text-indent: 3px;
 }
 
 button {
-    color: #505050 !important;
-    -webkit-border-radius: 5px !important;
-    -moz-border-radius: 5px !important;
-    border-radius: 5px !important;
-    background: #F0F0F0 !important;
-    outline: none !important;
+    color: #505050!important;
+    -webkit-border-radius: 5px!important;
+    -moz-border-radius: 5px!important;
+    border-radius: 5px!important;
+    background: #F0F0F0!important;
+    outline: 0!important;
 }
 
-.section-header, label {
-    color: #1d1d1d !important;
+.section-header,label {
+    color: #1d1d1d!important;
 }
 
-#description > div:nth-of-type(1) {
+#description>div:nth-of-type(1) {
     float: left;
     margin-left: 10px;
     margin-top: 10px;
     overflow: auto;
 }
 
-#description > div:nth-of-type(2) {
+#description>div:nth-of-type(2) {
     width: 150px;
     margin-right: 10px;
     margin-top: 10px;
@@ -340,8 +353,252 @@ button {
     clear: right;
 }
 
+a.task-icon-link {
+    padding-left: 18px;
+    margin-left: 8px;
+    vertical-align: middle!important;
+}
+
+a.task-icon-link img {
+    display: none!important;
+}
+
+a[href*="/job/"].task-icon-link {
+    background: url(img/return.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+#tasks div:nth-child(2) a[href*="/job/"].task-icon-link {
+    background: url(img/project.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=newJob].task-icon-link {
+    background: url(img/newjob.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/asynchPeople/"].task-icon-link {
+    background: url(img/people.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/builds"].task-icon-link {
+    background: url(img/history.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href="/projectRelationship"].task-icon-link {
+    background: url(img/project.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/fingerprint"].task-icon-link {
+    background: url(img/finger.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href="/manage"].task-icon-link {
+    background: url(img/manage.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/credential-store"].task-icon-link {
+    background: url(img/lock.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=repository].task-icon-link {
+    background: url(img/maven.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href="/me/my-views"].task-icon-link {
+    background: url(img/views.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href="/"].task-icon-link {
+    background: url(img/return.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=changes].task-icon-link {
+    background: url(img/paper.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/ws/"].task-icon-link {
+    background: url(img/folder.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=configure].task-icon-link {
+    background: url(img/manage.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=modules].task-icon-link {
+    background: url(img/views.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="build?"].task-icon-link {
+    background: url(img/build.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=javadoc].task-icon-link {
+    background: url(img/box.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=console].task-icon-link {
+    background: url(img/console.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=Delete].task-icon-link,a[href*=delete].task-icon-link {
+    background: url(img/x.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*=git].task-icon-link {
+    background: url(img/git.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/testReport"].task-icon-link {
+    background: url(img/clip.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+a[href*="/redeploy"].task-icon-link {
+    background: url(img/redeploy.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+div.task a[href="#"]:first-child {
+    background: url(img/x.png) no-repeat!important;
+    background-size: contain!important;
+    padding-left: 18px;
+    margin-left: 8px;
+    vertical-align: middle!important;
+}
+
+a.build-health-link {
+    padding-left: 24px;
+    margin-left: 12px;
+    vertical-align: middle!important;
+}
+
+a.build-health-link img,td img[src*=health] {
+    display: none!important;
+}
+
+img[src*="copyright-vertical.png"] {
+    opacity: .1;
+}
+
+td.healthReport a.build-health-link {
+    background: url(img/cloud.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+td.healthReport[data="100"] a.build-health-link {
+    background: url(img/sun.png) no-repeat!important;
+    background-size: contain!important;
+}
+
+#projectstatus td a[href*="build?"] {
+    background: url(img/build.png) no-repeat!important;
+    background-size: contain!important;
+    padding-left: 24px;
+    margin-left: 12px;
+}
+
+#projectstatus td a[href*="build?"] img {
+    display: none!important;
+}
+
+td:first-child a[href=javadoc] {
+    background: url(img/box.png) no-repeat!important;
+    background-size: contain!important;
+    padding: 24px!important;
+    display: block!important;
+}
+
+a[href=javadoc] img {
+    display: none!important;
+}
+
+td:first-child a[href="ws/"] {
+    background: url(img/folder.png) no-repeat!important;
+    background-size: contain!important;
+    padding: 24px!important;
+    display: block!important;
+}
+
+a[href="ws/"] img {
+    display: none!important;
+}
+
+td:first-child a[href=changes] {
+    background: url(img/paper.png) no-repeat!important;
+    background-size: contain!important;
+    padding: 24px!important;
+}
+
+#main-panel>table a[href="lastSuccessfulBuild/artifact/"] {
+    background: url(img/target.png) no-repeat!important;
+    background-size: contain!important;
+    padding: 24px!important;
+    padding-left: 70px!important;
+    display: block!important;
+    margin-left: -60px!important;
+}
+
+#main-panel>table a[href*="lastSuccessfulBuild/artifact/target/"]:first-child {
+    padding-left: 50px!important;
+    display: block!important;
+    margin-top: -20px;
+    color: #505050!important;
+}
+
+#main-panel>table .fileSize {
+    padding-left: 30px!important;
+    display: block!important;
+    margin-top: -20px;
+}
+
+#main-panel>table .fileList img,#main-panel>table a[href*="*view*"],#main-panel>table>tbody>tr img[src*=clipboard],#main-panel>table>tbody>tr img[src*=package] {
+    display: none!important;
+}
+
+#main-panel>table>tbody a[href*=".jar"] {
+    font-weight: 700!important;
+    color: #666!important;
+    vertical-align: middle!important;
+}
+
+a[href=changes] img {
+    display: none!important;
+}
+
+a[href="ws/"] tr {
+    overflow: auto;
+}
+
+td[style="vertical-align:middle"] a[href="ws/"] {
+    background: transparent!important;
+}
+
+#main-panel h1 img,a[href="#"] img {
+    display: none!important;
+}
+
 textarea {
-    max-width: 500px !important;
+    max-width: 500px!important;
 }
 
 #systemmessage {
@@ -356,25 +613,25 @@ textarea {
 }
 
 li.children {
-    background: none !important;
-    width: 0 !important;
-    height: 0 !important;
-    border-top: 4px solid transparent !important;
-    border-bottom: 4px solid transparent !important;
-    border-left: 5px solid #F0F0F0 !important;
-    margin-top: 10px;
+    background: none!important;
+    width: 0!important;
+    height: 0!important;
+    border-top: 4px solid transparent!important;
+    border-bottom: 4px solid transparent!important;
+    border-left: 5px solid #F0F0F0!important;
     margin-right: 5px;
     margin-left: 5px;
+    margin-top: 15px;
 }
 
 li.children:hover {
-    border-top: 4px solid transparent !important;
-    border-bottom: 4px solid transparent !important;
-    border-left: 5px solid #036 !important;
+    border-top: 4px solid transparent!important;
+    border-bottom: 4px solid transparent!important;
+    border-left: 5px solid #036!important;
 }
 
 li.item :first-of-type {
-    padding-right: 0px;
+    padding-right: 0;
 }
 
 li.item > .inside {
@@ -438,7 +695,7 @@ img[src$="aborted.png"],  img[src$="aborted.gif"],  img[src$="aborted_anime.gif"
     -moz-border-radius: 50%;
     padding: 0;
     border-radius: 50%;
-    background: #BBB !important;
+    background: rgba(0,0,0,0.1)
 }
 
 img[src*="blue.png"], img[src*="blue_anime.gif"] {
@@ -503,8 +760,9 @@ img[src$="images/32x32/disabled.png"], img[src$="images/32x32/disabled.gif"], im
 img[src$="images/32x32/nobuilt.png"],  img[src$="images/32x32/nobuilt.gif"],  img[src$="images/32x32/nobuilt_anime.gif"],
 img[src$="images/32x32/aborted.png"],  img[src$="images/32x32/aborted.gif"],  img[src$="images/32x32/aborted_anime.gif"] {
     width: 0;
-    height: 32px;
-    padding: 0 32px 0 0;
+    height: 24px;
+    padding: 0 24px 0 0;
+	margin-left: 5px;
 }
 
 img[src$="images/48x48/blue.png"],     img[src$="images/48x48/blue.gif"],     img[src$="images/48x48/blue_anime.gif"],
@@ -517,4 +775,19 @@ img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  im
     width: 0;
     height: 48px;
     padding: 0 48px 0 0;
+}
+
+#main-panel>pre,body>pre {
+    font-size: 13px;
+    background: #2b303b;
+    color: #c0c5ce;
+    padding: 20px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    border-radius: 3px;
+}
+
+#main-panel>pre>a,body>pre>a {
+    color: #bf616a!important;
+    text-decoration: underline;
 }
