@@ -338,7 +338,6 @@ button {
 
 #description>div:nth-of-type(1) {
     float: left;
-    margin-left: 10px;
     margin-top: 10px;
     overflow: auto;
 }
