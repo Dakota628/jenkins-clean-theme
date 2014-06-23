@@ -32,5 +32,4 @@ $jq(window).resize(function() {
 
 $jq(document).scroll(function() {
   stickyFoot();
-  updateExecutors();
 });
