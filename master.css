@@ -727,6 +727,17 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
     padding: 0px;
 }
 
+#executors tr:not(:first-of-type) > th.pane {
+    background: transparent !important;
+}
+
+#executors th.pane a.model-link {
+    display: block;
+    max-width: 1px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
 img[src$="images/16x16/blue.png"],     img[src$="images/16x16/blue.gif"],     img[src$="images/16x16/blue_anime.gif"],
 img[src$="images/16x16/yellow.png"],   img[src$="images/16x16/yellow.gif"],   img[src$="images/16x16/yellow_anime.gif"],
 img[src$="images/16x16/red.png"],      img[src$="images/16x16/red.gif"],      img[src$="images/16x16/red_anime.gif"],
