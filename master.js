@@ -9,14 +9,28 @@ function stickyFoot() {
   $jq("#main-table").css("min-height",vwptHeight-footHeight-headerHeight);
 }
 
+function updateExecutors() {
+  $jq('#executors th.pane a.model-link').css('max-width',$jq("#side-panel").width() - 15);
+}
+
 $jq(document).ready(function() {
   stickyFoot();
+  updateExecutors();
+
+  //hook into build executor update
+  _refreshPart = window.refreshPart;
+  window.refreshPart = function(id, url) {
+    _refreshPart(id, url);
+    if(id == 'executors') updateExecutors();
+  }
 });
 
 $jq(window).resize(function() {
   stickyFoot();
+  updateExecutors();
 });
 
 $jq(document).scroll(function() {
   stickyFoot();
+  updateExecutors();
 });
