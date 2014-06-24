@@ -2,6 +2,11 @@ body {
     background: #fff!important;
 }
 
+#main-panel > ul:nth-child(8) > li > img {
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
 #top-panel {
     height: 55px!important;
     padding-top: 15px;
