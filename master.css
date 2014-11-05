@@ -103,6 +103,10 @@ body {
     color: #326ca6!important;
 }
 
+#footer-container {
+    position: fixed;
+}
+
 a {
     color: #326ca6!important;
     text-decoration: none!important;
