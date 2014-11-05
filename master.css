@@ -239,7 +239,7 @@ td.inactive:hover {
     padding-left: 0!important;
     padding-right: 0!important;
     height: 100%!important;
-    position: fixed!important;
+    position: absolute!important;
 }
 
 #main-panel {
