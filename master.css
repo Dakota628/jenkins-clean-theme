@@ -103,6 +103,10 @@ body {
     color: #326ca6!important;
 }
 
+#footer-container {
+    position: fixed;
+}
+
 a {
     color: #326ca6!important;
     text-decoration: none!important;
@@ -239,6 +243,7 @@ td.inactive:hover {
     padding-left: 0!important;
     padding-right: 0!important;
     height: 100%!important;
+    position: absolute!important;
 }
 
 #main-panel {
@@ -246,6 +251,7 @@ td.inactive:hover {
     padding: 10px!important;
     margin-left: 10px!important;
     height: 100%!important;
+    float: right!important;
 }
 
 table {
