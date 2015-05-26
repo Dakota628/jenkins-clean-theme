@@ -112,6 +112,7 @@ body {
 #footer-container {
     position: fixed;
     bottom: 0;
+    z-index: 9999;
 }
 
 a {
@@ -294,7 +295,6 @@ table {
 }
 
 #side-panel div {
-    padding-top: 3px;
     padding-bottom: 3px;
 }
 
@@ -384,6 +384,10 @@ a.task-icon-link img {
     display: none!important;
 }
 
+a.yuimenuitemlabel img {
+    display: none!important;
+}
+
 a[href*="/job/"].task-icon-link {
     background: url(img/return.png) no-repeat!important;
     background-size: contain!important;
@@ -394,7 +398,7 @@ a[href*="/job/"].task-icon-link {
     background-size: contain!important;
 }
 
-a[href*=newJob].task-icon-link {
+a[href*=newJob].task-icon-link, a[href*=newJob].yuimenuitemlabel {
     background: url(img/newjob.png) no-repeat!important;
     background-size: contain!important;
 }
@@ -444,7 +448,7 @@ a[href="/"].task-icon-link {
     background-size: contain!important;
 }
 
-a[href*=changes].task-icon-link {
+a[href*=changes].task-icon-link, a[href*=changes].yuimenuitemlabel {
     background: url(img/paper.png) no-repeat!important;
     background-size: contain!important;
 }
@@ -454,7 +458,7 @@ a[href*="/ws/"].task-icon-link {
     background-size: contain!important;
 }
 
-a[href*=configure].task-icon-link {
+a[href*=configure].task-icon-link, a[href*=configure].yuimenuitemlabel {
     background: url(img/manage.png) no-repeat!important;
     background-size: contain!important;
 }
@@ -474,17 +478,17 @@ a[href*=javadoc].task-icon-link {
     background-size: contain!important;
 }
 
-a[href*=console].task-icon-link {
+a[href*=console].task-icon-link, a[href*=console].yuimenuitemlabel  {
     background: url(img/console.png) no-repeat!important;
     background-size: contain!important;
 }
 
-a[href*=Delete].task-icon-link,a[href*=delete].task-icon-link {
+a[href*=Delete].task-icon-link,a[href*=delete].task-icon-link, a[href*=Delete].yuimenuitemlabel,a[href*=delete].yuimenuitemlabel {
     background: url(img/x.png) no-repeat!important;
     background-size: contain!important;
 }
 
-a[href*=git].task-icon-link {
+a[href*=git].task-icon-link, a[href*=git].yuimenuitemlabel {
     background: url(img/git.png) no-repeat!important;
     background-size: contain!important;
 }
