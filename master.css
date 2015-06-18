@@ -5,9 +5,11 @@ body {
 #jenkins-head-icon {
   display: none !important;
 }
+
 #jenkins-name-icon {
-  display: none !important;
+  left: -15px !important;
 }
+
 #main-panel > ul:nth-child(8) > li > img {
     margin-right: 10px;
     margin-bottom: 10px;
