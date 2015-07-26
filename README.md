@@ -14,4 +14,4 @@ Credits
 
 Thanks to Chris Kempson (https://github.com/chriskempson/base16) for the base16 color scheme used in the console.
 
-![Screenshot](http://jqa.me/i/7658d9)
+![Screenshot](http://jqa.me/i/eae832)
