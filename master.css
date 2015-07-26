@@ -524,17 +524,6 @@ td.healthReport[data="100"] a.build-health-link {
     background-size: contain!important;
 }
 
-#projectstatus td a[href*="build?"] {
-    background: url(img/build.png) no-repeat!important;
-    background-size: contain!important;
-    padding-left: 24px;
-    margin-left: 12px;
-}
-
-#projectstatus td a[href*="build?"] img {
-    display: none!important;
-}
-
 td:first-child a[href=javadoc] {
     background: url(img/box.png) no-repeat!important;
     background-size: contain!important;
@@ -577,7 +566,7 @@ td[style="vertical-align:middle"] a[href="ws/"] {
     background: transparent!important;
 }
 
-#main-panel h1 img,a[href="#"] img {
+#main-panel h1 img {
     display: none!important;
 }
 
@@ -827,6 +816,11 @@ img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  im
 h1 {
     border-bottom: 1px solid #ccc;
     padding-bottom: 5px;
+}
+
+.icon-edit-delete {
+	padding-left: 10px !important;
+	width: 34px !important;
 }
 
 .section-header {
