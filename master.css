@@ -3,28 +3,41 @@ body {
 }
 
 #jenkins-head-icon {
-  display: none !important;
+    display: none;
 }
-#jenkins-name-icon {
-  display: none !important;
+
+#header .logo {
+    float: left;
+    width: 150px;
+    margin-top: -5px;
+    margin-left: -30px;
+    display: block;
 }
+
+.login, .searchbox {
+    margin-top: -7px;
+    padding: 0;
+}
+
+.login a {
+    color: white !important;
+}
+
 #main-panel > ul:nth-child(8) > li > img {
     margin-right: 10px;
     margin-bottom: 10px;
 }
 
-#top-panel {
+#header{
+    z-index: 1000;
     height: 55px!important;
     padding-top: 15px;
     padding-left: 5px;
     background: #036;
+    position: relative;
 }
 
-#top-panel td #login-field span a,#top-panel td #searchform a {
-    background: 0 0;
-}
-
-#top-panel td>a {
+#header td>a {
     display: block;
     width: 300px;
 }
@@ -67,18 +80,44 @@ body {
 }
 
 #main-table {
-    background: #fff!important;
-    background-image: none!important;
+    background: #fff none !important;
     height: 100%!important;
 }
 
 #filter-box,#search-box {
-    padding: 3px!important;
+    padding: 5px!important;
     box-shadow: none!important;
     background-image: none!important;
     border: 1px solid #DDD!important;
-    border-radius: 4px!important;
+    border-radius: 10px!important;
     outline: 0!important;
+}
+
+#buildHistory * {
+    border: none;
+}
+
+.CodeMirror {
+    border: 1px solid #ccc !important;
+}
+
+input[type="text"], input[type="password"], textarea {
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+    font-size: inherit;
+    margin: 0;
+    max-width: 250px;
+    vertical-align: baseline;
+    width: 100%
+}
+
+input[type="text"]:focus, input[type="password"]:focus, textarea:focus  {
+    border: 1px solid #5897fb;
+    outline: 0;
+    -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.3)
 }
 
 .yui-skin-sam .yui-ac {
@@ -89,7 +128,7 @@ body {
     padding-bottom: 5px;
 }
 
-#top-panel>table>tbody>tr>td:first-of-type>a>img {
+#header>table>tbody>tr>td:first-of-type>a>img {
     margin-top: 5px;
 }
 
@@ -100,21 +139,15 @@ body {
     float: right;
 }
 
-#footer {
-    background: rgba(0,0,0,.04);
+footer {
+    border-top: 1px solid #ddd!important;
+    background: #f4f4f4;
     color: #505050!important;
 }
 
-#footer>a {
+footer>a {
     color: #326ca6!important;
 }
-
-#footer-container {
-    position: fixed;
-    bottom: 0;
-    z-index: 9999;
-}
-
 a {
     color: #326ca6!important;
     text-decoration: none!important;
@@ -144,10 +177,6 @@ a:hover {
 
 .smallfont>a:hover {
     text-decoration: none!important;
-}
-
-#projectstatus {
-    margin-bottom: 30px!important;
 }
 
 #projectstatus th>a,th,th>a {
@@ -251,19 +280,78 @@ td.inactive:hover {
     background: #fff!important;
 }
 
+#projectstatus .header {
+    background: white !important;
+}
+
+.pane-frame:hover {
+    border: none;
+}
+
+.pane-frame {
+    border-radius: 0;
+    border: none;
+}
+
+li.item, li.item a {
+    height: 35px !important;
+    background: transparent !important;
+}
+
+li.item:hover {
+    background: white !important;
+    height: 35px !important;
+    display: block !important;
+    color: black !important;
+}
+
 #side-panel {
+    margin-top: -90px;
     background: rgba(0,0,0,.05)!important;
     padding-left: 0!important;
     padding-right: 0!important;
+    padding-top: 110px;
     height: 100%!important;
     position: absolute!important;
+    border-right: 1px solid #ddd!important;
+    width: 240px;
+}
+
+#tasks {
+    margin-top: 15px;
+    margin-bottom: 0;
+}
+
+.task > a {
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+    display: block;
+    float: left;
+}
+
+.task-link{
+    padding-left: 10px;
+}
+
+.task-icon-link {
+    padding-left: 10px;
+}
+
+#logRecorders {
+    margin-bottom: 20px !important;
 }
 
 #main-panel {
-    border-left: 1px solid #ddd!important;
+    width: 100%;
+    padding-left: 260px;
     margin-left: 10px!important;
     height: 100%!important;
     float: right!important;
+}
+
+#main-panel table:last-of-type {
+    padding-top: 15px !important;
 }
 
 table {
@@ -315,7 +403,6 @@ table {
 }
 
 td.pane,tr.build-row>td {
-    background: rgba(0,0,0,.05)!important;
     border-left: 1px solid #f0f0f0!important;
     border-bottom: 1px solid #f0f0f0!important;
     text-align: left;
@@ -345,13 +432,52 @@ th.pane,tr.build-row>th {
     text-indent: 3px;
 }
 
-button {
-    color: #505050!important;
-    -webkit-border-radius: 5px!important;
-    -moz-border-radius: 5px!important;
-    border-radius: 5px!important;
-    background: #F0F0F0!important;
-    outline: 0!important;
+button, input[type="button"], input[type="submit"], input[type="file"]::before, input[type="file"]::-webkit-file-upload-button {
+    -moz-box-sizing: border-box !important;
+    box-sizing: border-box !important;
+    background: #f5f5f5 !important;
+    border: 1px solid #ccc !important;
+    border-radius: 3px !important;
+    color: #333 !important;
+    cursor: pointer;
+    display: inline-block !important;
+    font-family: inherit !important;
+    font-size: 14px !important;
+    font-variant: normal !important;
+    font-weight: normal !important;
+    height: 2.14285714em !important;
+    line-height: 1.42857143 !important;
+    margin: 0 !important;
+    padding: 4px 10px !important;
+    text-decoration: none !important;
+    vertical-align: baseline !important;
+    white-space: nowrap !important;
+}
+
+button:hover, input[type="button"]:hover, input[type="submit"]:hover, input[type="file"]::before:hover, input[type="file"]::-webkit-file-upload-button:hover {
+    background: white !important;
+}
+
+form > table td {
+    padding-top: 5px;
+}
+
+img[alt="[Load statistics graph]"] {
+    width: 100% !important;
+}
+
+form > table tr td:first-of-type {
+    color: #707070 !important;
+}
+
+#header .searchbox {
+    padding: 5px 5px 0 0;
+}
+
+.textarea-handle {
+    border: none !important;
+    padding: 1px;
+    margin: 1px;
 }
 
 .section-header,label {
@@ -372,143 +498,6 @@ button {
     margin-bottom: 10px;
     float: right;
     clear: right;
-}
-
-a.task-icon-link {
-    padding-left: 18px;
-    margin-left: 8px;
-    vertical-align: middle!important;
-}
-
-a.task-icon-link img {
-    display: none!important;
-}
-
-a.yuimenuitemlabel img {
-    display: none!important;
-}
-
-a[href*="/job/"].task-icon-link {
-    background: url(img/return.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-#tasks div:nth-child(2) a[href*="/job/"].task-icon-link {
-    background: url(img/project.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=newJob].task-icon-link, a[href*=newJob].yuimenuitemlabel {
-    background: url(img/newjob.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/asynchPeople/"].task-icon-link {
-    background: url(img/people.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/builds"].task-icon-link {
-    background: url(img/history.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href="/projectRelationship"].task-icon-link {
-    background: url(img/project.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/fingerprint"].task-icon-link {
-    background: url(img/finger.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href="/manage"].task-icon-link {
-    background: url(img/manage.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/credential-store"].task-icon-link {
-    background: url(img/lock.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=repository].task-icon-link {
-    background: url(img/maven.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href="/me/my-views"].task-icon-link {
-    background: url(img/views.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href="/"].task-icon-link {
-    background: url(img/return.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=changes].task-icon-link, a[href*=changes].yuimenuitemlabel {
-    background: url(img/paper.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/ws/"].task-icon-link {
-    background: url(img/folder.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=configure].task-icon-link, a[href*=configure].yuimenuitemlabel {
-    background: url(img/manage.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=modules].task-icon-link {
-    background: url(img/views.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="build?"].task-icon-link {
-    background: url(img/build.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=javadoc].task-icon-link {
-    background: url(img/box.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=console].task-icon-link, a[href*=console].yuimenuitemlabel  {
-    background: url(img/console.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=Delete].task-icon-link,a[href*=delete].task-icon-link, a[href*=Delete].yuimenuitemlabel,a[href*=delete].yuimenuitemlabel {
-    background: url(img/x.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*=git].task-icon-link, a[href*=git].yuimenuitemlabel {
-    background: url(img/git.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/testReport"].task-icon-link {
-    background: url(img/clip.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-a[href*="/redeploy"].task-icon-link {
-    background: url(img/redeploy.png) no-repeat!important;
-    background-size: contain!important;
-}
-
-div.task a[href="#"]:first-child {
-    background: url(img/x.png) no-repeat!important;
-    background-size: contain!important;
-    padding-left: 18px;
-    margin-left: 8px;
-    vertical-align: middle!important;
 }
 
 a.build-health-link {
@@ -557,32 +546,6 @@ a[href=javadoc] img {
     display: none!important;
 }
 
-td:first-child a[href="ws/"] {
-    background: url(img/folder.png) no-repeat!important;
-    background-size: contain!important;
-    padding: 24px!important;
-    display: block!important;
-}
-
-a[href="ws/"] img {
-    display: none!important;
-}
-
-td:first-child a[href=changes] {
-    background: url(img/paper.png) no-repeat!important;
-    background-size: contain!important;
-    padding: 24px!important;
-}
-
-#main-panel>table a[href="lastSuccessfulBuild/artifact/"] {
-    background: url(img/target.png) no-repeat!important;
-    background-size: contain!important;
-    padding: 24px!important;
-    padding-left: 70px!important;
-    display: block!important;
-    margin-left: -60px!important;
-}
-
 #main-panel>table a[href*="lastSuccessfulBuild/artifact/target/"]:first-child {
     padding-left: 50px!important;
     display: block!important;
@@ -604,10 +567,6 @@ td:first-child a[href=changes] {
     font-weight: 700!important;
     color: #666!important;
     vertical-align: middle!important;
-}
-
-a[href=changes] img {
-    display: none!important;
 }
 
 a[href="ws/"] tr {
@@ -697,15 +656,20 @@ td.pane-header > div > a.collapse {
 }
 
 Keyframes inprogress {
-    0% {
-        opacity: 1;
-    }
-    50% {
-        opacity: 0.1;
-    }
-    100% {
-        opacity: 1;
-    }
+0% {
+    opacity: 1;
+}
+50% {
+    opacity: 0.1;
+}
+100% {
+    opacity: 1;
+}
+}
+
+.timeline-event-icon {
+    width: 10px;
+    height: 10px;
 }
 
 img[src$="blue.png"],     img[src$="blue.gif"],     img[src$="blue_anime.gif"],
@@ -714,7 +678,7 @@ img[src$="red.png"],      img[src$="red.gif"],      img[src$="red_anime.gif"],
 img[src$="grey.png"],     img[src$="grey.gif"],     img[src$="grey_anime.gif"],
 img[src$="disabled.png"], img[src$="disabled.gif"], img[src$="disabled_anime.gif"],
 img[src$="nobuilt.png"],  img[src$="nobuilt.gif"],  img[src$="nobuilt_anime.gif"],
-img[src$="aborted.png"],  img[src$="aborted.gif"],  img[src$="aborted_anime.gif"] {
+img[src$="aborted.png"],  img[src$="aborted.gif"],  img[src$="aborted_anime.gif"], .timeline-event-icon {
     content: url('data:image/gif;base64,R0lGODlhAQABAAAAACH5BAEKAAEALAAAAAABAAEAAAICTAEAOw==');
     -webkit-border-radius: 50%;
     -moz-border-radius: 50%;
@@ -723,7 +687,7 @@ img[src$="aborted.png"],  img[src$="aborted.gif"],  img[src$="aborted_anime.gif"
     background: rgba(0,0,0,0.1)
 }
 
-img[src*="blue.png"], img[src*="blue_anime.gif"] {
+img[src*="blue.png"], img[src*="blue_anime.gif"], .icon-event-blue {
     background: #326ca6 !important;
 }
 
@@ -750,7 +714,7 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 .build-health-icon {
-    padding: 0px;
+    padding: 0;
 }
 
 #executors tr:not(:first-of-type) > th.pane {
@@ -818,12 +782,72 @@ img[src$="images/48x48/aborted.png"],  img[src$="images/48x48/aborted.gif"],  im
     background: #2b303b;
     color: #c0c5ce;
     padding: 20px;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    border-radius: 3px;
+}
+
+.icon-help {
+    display: none;
+}
+
+.help-area {
+    display: none;
+}
+
+#main-panel>pre:first-of-type,body>pre:first-of-type {
+    -webkit-border-top-left-radius: 3px;
+    -webkit-border-top-right-radius: 3px;
+    -moz-border-radius-topleft: 3px;
+    -moz-border-radius-topright: 3px;
+    border-top-left-radius: 3px;
+    border-top-right-radius: 3px;
+}
+
+#main-panel>pre:last-of-type,body>pre:last-of-type {
+    -webkit-border-bottom-right-radius: 3px;
+    -webkit-border-bottom-left-radius: 3px;
+    -moz-border-radius-bottomright: 3px;
+    -moz-border-radius-bottomleft: 3px;
+    border-bottom-right-radius: 3px;
+    border-bottom-left-radius: 3px
 }
 
 #main-panel>pre>a,body>pre>a {
     color: #bf616a!important;
-    text-decoration: underline;
+    text-decoration: underline;;
+}
+
+#projectstatus tr, #projectstatus td {
+    border-radius: 0 !important;
+}
+
+#projectstatus tbody tr:first-child th:first-child, #projectstatus tbody tr:first-child th:last-child,
+#projectstatus tbody tr:last-child td:first-child , #projectstatus tr:last-child td:last-child   {
+    border-radius: 0 !important;
+}
+
+h1 {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 5px;
+}
+
+.section-header {
+    border-bottom: 1px solid #ccc !important;
+    padding-top: 15px;
+}
+
+.tabBarFrame {
+    border: 1px solid rgba(0,0,0,.1)!important;
+    padding: 5px;
+}
+
+.tabBar .tab:not(.active) a {
+    color: black !important;
+}
+
+.tabBar .tab a {
+    background: none !important;
+    border: none !important;
+}
+
+#side-panel .pane-frame:hover, #side-panel .pane-frame.mouseover {
+    border: none !important;
 }
