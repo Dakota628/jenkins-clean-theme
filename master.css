@@ -712,8 +712,6 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 
 #executors th.pane a.model-link {
     display: block;
-    max-width: 1px;
-    overflow: hidden;
     text-overflow: ellipsis;
 }
 
