@@ -322,6 +322,10 @@ li.item:hover {
     margin-bottom: 0;
 }
 
+.task {
+    white-space: normal;
+}
+
 .task > a {
     position: relative;
     top: 50%;
