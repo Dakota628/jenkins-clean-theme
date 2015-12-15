@@ -315,10 +315,11 @@ li.item:hover {
     padding-left: 0!important;
     padding-right: 0!important;
     padding-top: 110px;
-    height: 100%!important;
+    /* height: 100%!important; */
     position: absolute!important;
     border-right: 1px solid #ddd!important;
-    width: 240px;
+    border-bottom: 1px solid #ddd!important;
+    width: 22% !important;
 }
 
 #tasks {
@@ -352,7 +353,7 @@ li.item:hover {
 
 #main-panel {
     width: 100%;
-    padding-left: 260px;
+    padding-left: 23% !important;
     margin-left: 10px!important;
     height: 100%!important;
     float: right!important;
@@ -719,6 +720,7 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 #executors th.pane a.model-link {
+    background: transparent !important;
     display: block;
     text-overflow: ellipsis;
 }
