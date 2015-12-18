@@ -853,3 +853,67 @@ h1 {
 #side-panel .pane-frame:hover, #side-panel .pane-frame.mouseover {
     border: none !important;
 }
+
+/************************************
+Build pipeline plugin.
+************************************/
+.rounded {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.build-card .rounded {
+    width: 82% !important;
+}
+.header div {
+    background: none !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+#pipelines table:last-of-type {
+    padding: 3% 4% !important;
+}
+.build-pipeline td {
+    padding: 0 !important;
+}
+.build-card {
+    margin: 1em !important;
+}
+#build-pipeline-plugin-content {
+    border-radius: 0 !important;
+    padding: 1em !important;
+}
+#build-pipeline-plugin-content h1 {
+    margin: 0 !important;
+}
+td.next {
+    padding-top: 4% !important;
+    width: auto !important;
+}
+.build-card {
+    min-height: 112px !important;
+}
+.PENDING {
+  min-width: 
+}
+.unknown td {
+    height: 6px !important;
+}
+
+.status-bar {
+    height: 100% !important;
+}
+.SUCCESS {
+    background-color: #21d330 !important;
+}
+.PENDING {
+    background-color: #0CF !important;
+}
+.BUILDING {
+    background-color: #f7da64 !important;
+}
+.FAILURE {
+    background-color: #f0251c !important;
+}
+.revision {
+    background-color: #d1d5d8 !important;
+}
