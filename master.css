@@ -139,6 +139,10 @@ input[type="text"]:focus, input[type="password"]:focus, textarea:focus  {
     float: right;
 }
 
+#footer-container {
+    display: none;
+}
+
 footer {
     border-top: 1px solid #ddd!important;
     background: #f4f4f4;
@@ -311,15 +315,20 @@ li.item:hover {
     padding-left: 0!important;
     padding-right: 0!important;
     padding-top: 110px;
-    height: 100%!important;
+    /* height: 100%!important; */
     position: absolute!important;
     border-right: 1px solid #ddd!important;
-    width: 240px;
+    border-bottom: 1px solid #ddd!important;
+    width: 22% !important;
 }
 
 #tasks {
     margin-top: 15px;
     margin-bottom: 0;
+}
+
+.task {
+    white-space: normal;
 }
 
 .task > a {
@@ -344,7 +353,7 @@ li.item:hover {
 
 #main-panel {
     width: 100%;
-    padding-left: 260px;
+    padding-left: 23% !important;
     margin-left: 10px!important;
     height: 100%!important;
     float: right!important;
@@ -711,6 +720,7 @@ img[src*="progress-unknown.gif"], img[src*="progress-unknown-red.gif"] {
 }
 
 #executors th.pane a.model-link {
+    background: transparent !important;
     display: block;
     text-overflow: ellipsis;
 }
@@ -842,4 +852,68 @@ h1 {
 
 #side-panel .pane-frame:hover, #side-panel .pane-frame.mouseover {
     border: none !important;
+}
+
+/************************************
+Build pipeline plugin.
+************************************/
+.rounded {
+    border-radius: 0 !important;
+    box-shadow: none !important;
+}
+.build-card .rounded {
+    width: 82% !important;
+}
+.header div {
+    background: none !important;
+    border-top-right-radius: 0 !important;
+    border-top-left-radius: 0 !important;
+}
+#pipelines table:last-of-type {
+    padding: 3% 4% !important;
+}
+.build-pipeline td {
+    padding: 0 !important;
+}
+.build-card {
+    margin: 1em !important;
+}
+#build-pipeline-plugin-content {
+    border-radius: 0 !important;
+    padding: 1em !important;
+}
+#build-pipeline-plugin-content h1 {
+    margin: 0 !important;
+}
+td.next {
+    padding-top: 4% !important;
+    width: auto !important;
+}
+.build-card {
+    min-height: 112px !important;
+}
+.PENDING {
+  min-width: 
+}
+.unknown td {
+    height: 6px !important;
+}
+
+.status-bar {
+    height: 100% !important;
+}
+.SUCCESS {
+    background-color: #21d330 !important;
+}
+.PENDING {
+    background-color: #0CF !important;
+}
+.BUILDING {
+    background-color: #f7da64 !important;
+}
+.FAILURE {
+    background-color: #f0251c !important;
+}
+.revision {
+    background-color: #d1d5d8 !important;
 }
