@@ -315,7 +315,7 @@ li.item:hover {
     padding-left: 0!important;
     padding-right: 0!important;
     padding-top: 110px;
-    /* height: 100%!important; */
+    height: 99.9% !important;
     position: absolute!important;
     border-right: 1px solid #ddd!important;
     border-bottom: 1px solid #ddd!important;
