@@ -147,6 +147,7 @@ footer {
     border-top: 1px solid #ddd!important;
     background: #f4f4f4;
     color: #505050!important;
+    position: fixed !important;
 }
 
 footer>a {
